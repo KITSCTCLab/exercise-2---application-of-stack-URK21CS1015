@@ -50,7 +50,7 @@ class Evaluate:
     """
     # Write your code here
         if len(self.stack)<self.size_of_stack:
-         self.top+=1
+         self.top +=1
          self.stack.append(operand)
 
 
@@ -63,9 +63,9 @@ class Evaluate:
       True if the expression is valid, else returns False.
     """
     # Write your code here
-    operands=[elements for element in expression if element.isdigit()]
-    operators=[elements for element in expression if element["+","-","*","/","^"]]
-    if len(operand)+len(operators))==len(expression) and len(operands)==len(operators)+1:
+    operands=[elemen for element in expression if element.isdigit()]
+    operators=[element for element in expression if element["+","-","*","/","^"]]
+    if len(operands)+len(operators))==len(expression) and len(operands)==len(operators)+1:
       return expression[0] not in operators and expression[1] not in operators
                            
 
@@ -79,7 +79,7 @@ class Evaluate:
       The result of evaluated postfix expression.
     """
     # Write your code here
-      self.stack = []
+       self.stack = []
     for element in expression:
       if element.isdigit():
         self.push(int(element))
