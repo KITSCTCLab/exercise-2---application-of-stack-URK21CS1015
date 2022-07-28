@@ -13,9 +13,9 @@ class Evaluate:
     Arguments:
       size_of_stack: An integer to set the size of stack.
     """
-       self.top = -1
-       self.size_of_stack=size
-       self.stack[]
+      self.top = -1
+      self.size_of_stack=size
+      self.stack[]
     
 
 
