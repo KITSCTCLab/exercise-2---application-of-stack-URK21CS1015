@@ -63,10 +63,10 @@ class Evaluate:
       True if the expression is valid, else returns False.
     """
     # Write your code here
-    operand=[elements for element in expression if element.isdigit()]
+    operands=[elements for element in expression if element.isdigit()]
     operators=[elements for element in expression if element["+","-","*","/","^"]]
     if len(operand)+len(operators))==len(expression) and len(operands)==len(operators)+1:
-      return expression[0] not in operators and expression[1]not in operators
+      return expression[0] not in operators and expression[1] not in operators
                            
 
 
